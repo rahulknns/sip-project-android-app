@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/detected_frequency"
+        android:layout_width="185dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="104dp"
+        android:hint="Frequency"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="158dp"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f1" />
+
+    <TextView
+        android:id="@+id/f1"
+        android:layout_width="138dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFEB3B"
+        android:text="@string/f1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detected_frequency" />
+
+    <TextView
+        android:id="@+id/f2"
+        android:layout_width="121dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="76dp"
+        android:background="#14E8D0"
+        android:text="@string/f2"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/f1"
+        app:layout_constraintTop_toBottomOf="@+id/detected_frequency" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
